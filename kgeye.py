@@ -31,7 +31,6 @@ if __name__ == '__main__':
     parser.add_argument("-PP", "--PP", action='store_true', help="ICMP ping with type 13")
     parser.add_argument("-PM", "--PM", action='store_true', help="ICMP ping with type 17")
     parser.add_argument("--max_threads", type=int, default=50, help="Maximum number of threads (default: 10)")
-    parser.add_argument("--max_processes", type=int, default=10, help="Maximum number of processes (default: 10)")
     parser.add_argument("--exclude",  help="Exclude hosts/networks")
     parser.add_argument("--excludefile",  help="Exclude list from file")
     parser.add_argument("-F", "--fast", action="store_true",  help="fast scan with few port")
