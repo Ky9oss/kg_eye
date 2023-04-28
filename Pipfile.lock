@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "48a942209e07edced25af57319fa326b1f119473fddb9cb78f4a1e53be218cdc"
+            "sha256": "03882d1fc09c00aa783e592bba9fdee342012457d492eabd77b2bce3d3483d46"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "pygeoip": {
+            "hashes": [
+                "sha256:1938b9dac7b00d77f94d040b9465ea52c938f3fcdcd318b5537994f3c16aef96",
+                "sha256:f22c4e00ddf1213e0fae36dc60b46ee7c25a6339941ec1a975539014c1f9a96d"
+            ],
+            "index": "pypi",
+            "version": "==0.3.2"
+        },
         "scapy": {
             "hashes": [
                 "sha256:5b260c2b754fd8d409ba83ee7aee294ecdbb2c235f9f78fe90bc11cb6e5debc2"
