@@ -14,12 +14,23 @@ from modules.scan_ports import *
 
 # 捕捉Ctrl+C信号
 def signal_handler(signal, frame):
+
     print('Stopping...')
     for process in multiprocessing.active_children():
         process.terminate()
 
 
 if __name__ == '__main__':
+    print('''
+
+    ██╗  ██╗██╗   ██╗ ██████╗  ██████╗ ███████╗███████╗
+    ██║ ██╔╝╚██╗ ██╔╝██╔════╝ ██╔═══██╗██╔════╝██╔════╝
+    █████╔╝  ╚████╔╝ ██║  ███╗██║   ██║███████╗███████╗
+    ██╔═██╗   ╚██╔╝  ██║   ██║██║   ██║╚════██║╚════██║
+    ██║  ██╗   ██║   ╚██████╔╝╚██████╔╝███████║███████║
+    ╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝                                                                      
+                ''')
+
     signal.signal(signal.SIGINT, signal_handler)
 
     parser = argparse.ArgumentParser(description="TCP Port Scanner")
